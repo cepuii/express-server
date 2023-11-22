@@ -1,9 +1,11 @@
 const express = require("express");
 const axios = require("axios");
+const cors = require('cors');
 const { parse } = require("url");
 
 const app = express();
 const port = 3333;
+app.use(cors());
 
 async function getAccessToken(){
   
